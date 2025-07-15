@@ -1,0 +1,4 @@
+body {
+  --mat-toolbar-container-background-color: var(--primary) !important;
+
+}

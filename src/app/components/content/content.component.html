@@ -1,0 +1,94 @@
+<div class="content responsive-grid">
+  <div>
+    <h3>Buttons</h3>
+
+    <div class="flex-row">
+      <button mat-button (click)="showDialog()">Open Dialog</button>
+      <button mat-flat-button (click)="showDialog()">Open Dialog</button>
+      <button mat-raised-button (click)="showDialog()">Open Dialog</button>
+      <button mat-stroked-button (click)="showDialog()">Open Dialog</button>
+    </div>
+
+    <br /><br />
+
+    <h3>Input</h3>
+
+    <form [formGroup]="form">
+      <mat-form-field appearance="fill">
+        <input formControlName="color" matInput placeholder="Enter some information" />
+      </mat-form-field>
+    </form>
+
+    <br /><br />
+
+    <mat-form-field appearance="outline">
+      <input matInput placeholder="Enter some information" />
+    </mat-form-field>
+
+    <br /><br />
+
+    <h3>Checkbox</h3>
+
+    <mat-checkbox>Check this box!</mat-checkbox>
+
+    <br /><br />
+
+    <h3>Radio</h3>
+
+    <mat-radio-group name="test">
+      <mat-radio-button checked="true">Option 1</mat-radio-button>
+      <mat-radio-button>Option 2</mat-radio-button>
+    </mat-radio-group>
+
+    <br /><br />
+
+    <mat-form-field>
+      <mat-label>Favorite food</mat-label>
+      <mat-select>
+        <mat-option value="Pizza">Pizza</mat-option>
+        <mat-option value="Chips">Chips</mat-option>
+        <mat-option value="Steak">Steak</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <h3>Expansion panel</h3>
+
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Expansion title </mat-panel-title>
+        <mat-panel-description>
+          This is a summary of the content
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the primary content of the panel.</p>
+    </mat-expansion-panel>
+
+    <br /><br />
+  </div>
+  <div>
+    <h3>A card</h3>
+    <mat-card class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <img
+        mat-card-image
+        src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+        alt="Photo of a Shiba Inu"
+      />
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz
+          breeds of dog from Japan. A small, agile dog that copes very well with
+          mountainous terrain, the Shiba Inu was originally bred for hunting.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
