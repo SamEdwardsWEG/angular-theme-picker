@@ -41,9 +41,13 @@ export class ContentComponent {
   })
 
   constructor() {
-    this.form.valueChanges.subscribe(
-      res => this.themeService.changeTheme(res.color)
-    );
+    //
+    // UNCOMMENT THE BELOW TO ENABLE CUSTOM COLORS
+    //
+
+    // this.form.valueChanges.subscribe(
+    //   res => this.themeService.changeTheme(res.color)
+    // );
   }
 
   showDialog(): void {
