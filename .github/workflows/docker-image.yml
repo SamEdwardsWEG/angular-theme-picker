@@ -24,7 +24,7 @@ jobs:
         name: Build and push image
         uses: docker/build-push-action@v6
         with:
-          context: ../../Dockerfile
+          context: .
           push: true
           tags: 680651984289.dkr.ecr.eu-west-1.amazonaws.com/weg21/colour-picker:latest
 
